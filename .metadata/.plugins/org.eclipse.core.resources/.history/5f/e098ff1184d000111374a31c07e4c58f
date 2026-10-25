@@ -1,0 +1,99 @@
+package com.example.security.configuration;
+
+import java.beans.Customizer;
+import java.util.ArrayList;
+import java.util.List;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.http.HttpLogging;
+import org.springframework.security.config.annotation.web.builders.HttpSecurity;
+import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
+import org.springframework.security.config.http.SessionCreationPolicy;
+import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UserDetailsService;
+import org.springframework.security.provisioning.InMemoryUserDetailsManager;
+import org.springframework.security.web.SecurityFilterChain;
+
+
+@Configuration
+@EnableWebSecurity
+public class SecurityConfiguration {
+ 
+	// customized exception
+	
+	@Bean
+	public SecurityFilterChain securityFilterChain(HttpSecurity httpSecurity) throws Exception{
+		
+		// 1.CSRF DISABLE
+		//   SAME SITE STRICT
+		//   SESSION - STATLESS
+		// 2.Functional interface and lambda expressions
+		
+		
+		
+		return httpSecurity.csrf(Customizer -> Customizer.disable())
+		.authorizeHttpRequests(request -> request.anyRequest().authenticated())
+	    .httpBasic(org.springframework.security.config.Customizer.withDefaults())
+        .sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+		 .build();
+		
+		// above or bellow code - both are same above one is following the bilder modle means we have same object
+		// then we use like this. so both are same .
+		
+//		httpSecurity.csrf(Customizer -> Customizer.disable());
+//		httpSecurity.authorizeHttpRequests(request -> request.anyRequest().authenticated());
+		
+//		// Enable the default login form
+//		
+//     //   httpSecurity.formLogin(org.springframework.security.config.Customizer.withDefaults());
+//        httpSecurity.httpBasic(org.springframework.security.config.Customizer.withDefaults());
+//        
+//        httpSecurity.sessionManagement(session -> session.sessionCreationPolicy(SessionCreationPolicy.STATELESS));
+//		return httpSecurity.build();
+//			
+		
+	}
+	
+	// multiple user access --- multiple users in spring security.
+	
+	@Bean
+	public UserDetailsService userDetailsService() {
+		
+		// using list -- this is second way
+		List<UserDetails> users = new ArrayList<>();
+		
+		UserDetails user1 = User
+				.withDefaultPasswordEncoder()
+				.username("poojitha")
+				.password("1234")
+				.roles("admin")
+				.build();
+		
+		UserDetails user2 = User
+				.withDefaultPasswordEncoder()
+				.username("hani")
+				.password("3456")
+				.roles("manager")
+				.build();
+		
+		UserDetails user3 = User
+				.withDefaultPasswordEncoder()
+				.username("sree")
+				.password("7890")
+				.roles("user")
+				.build();
+		
+		users.add(user1); // these three things is the way to add the user arguments
+		users.add(user2);
+		users.add(user3);
+		 
+		return new InMemoryUserDetailsManager(users); // this is second way to pass the users
+		// return new InMemoryUserDetailsManager(user1, user2, user3); // varargs -- this is one way to create the multi users
+		
+	}
+    
+	
+	
+}

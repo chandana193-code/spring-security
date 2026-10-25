@@ -1,0 +1,101 @@
+0:00:00 Tab1 PageLoad
+0:00:00 Tab1 FinishNav2
+0:00:00 Tab1 PageLoad
+0:00:04 Memory Pressure: Moderate
+0:00:00 Startup
+0:00:00 Microsoft.DeleteProfileHelper.CleanUpEphemeralProfiles
+0:00:00 Microsoft.DeleteProfileHelper.CleanUpDeletedProfiles
+0:00:00 Microsoft.BrowserList.AddBrowser
+0:00:00 Browser1 Insert active Tab1 at 0
+0:00:00 Tab1 StartNav1 #auto_toplevel
+0:00:00 Tab1 StartNav2 #typed
+0:00:00 Tab1 FinishNav1
+0:00:00 Tab1 PageLoad
+0:00:00 Tab1 FinishNav2
+0:00:00 Tab1 PageLoad
+0:00:03 Tab1 StartNav3 #typed
+0:00:03 Tab1 FinishNav3
+0:00:03 Tab1 PageLoad
+0:00:04 Memory Pressure: Moderate
+0:00:00 Startup
+0:00:00 Microsoft.DeleteProfileHelper.CleanUpEphemeralProfiles
+0:00:00 Microsoft.DeleteProfileHelper.CleanUpDeletedProfiles
+0:00:00 Microsoft.BrowserList.AddBrowser
+0:00:00 Browser1 Insert active Tab1 at 0
+0:00:00 Tab1 StartNav1 #auto_toplevel
+0:00:00 Tab1 StartNav2 #typed
+0:00:00 Tab1 FinishNav1
+0:00:00 Tab1 PageLoad
+0:00:00 Tab1 FinishNav2
+0:00:00 Tab1 PageLoad
+0:00:02 Microsoft.Shutdown.TabStripModel.SendDetachWebContentsNotifications
+0:00:00 Startup
+0:00:00 Microsoft.DeleteProfileHelper.CleanUpEphemeralProfiles
+0:00:00 Microsoft.DeleteProfileHelper.CleanUpDeletedProfiles
+0:00:00 Microsoft.BrowserList.AddBrowser
+0:00:00 Browser1 Insert active Tab1 at 0
+0:00:00 Tab1 StartNav1 #auto_toplevel
+0:00:00 Tab1 StartNav2 #typed
+0:00:00 Tab1 FinishNav1
+0:00:00 Tab1 PageLoad
+0:00:00 Tab1 FinishNav2
+0:00:00 Tab1 PageLoad
+0:00:02 Tab1 StartNav3 #typed
+0:00:02 Tab1 FinishNav3 ERR_ABORTED
+0:00:02 Tab1 StartNav4 #typed
+0:00:02 Tab1 FinishNav4 ERR_ABORTED
+0:00:02 Tab1 StartNav5 #typed
+0:00:02 Tab1 FinishNav5 ERR_ABORTED
+0:00:02 Tab1 StartNav6 #typed
+0:00:02 Tab1 FinishNav6 ERR_ABORTED
+0:00:02 Tab1 StartNav7 #typed
+0:00:02 Tab1 FinishNav7 ERR_ABORTED
+0:00:02 Tab1 StartNav8 #typed
+0:00:02 Tab1 FinishNav8 ERR_ABORTED
+0:00:02 Tab1 StartNav9 #typed
+0:00:02 Tab1 FinishNav9 ERR_ABORTED
+0:00:02 Tab1 StartNav10 #typed
+0:00:02 Tab1 FinishNav10 ERR_ABORTED
+0:00:02 Tab1 StartNav11 #typed
+0:00:02 Tab1 FinishNav11 ERR_ABORTED
+0:00:02 Tab1 StartNav12 #typed
+0:00:02 Tab1 FinishNav12 ERR_ABORTED
+0:00:02 Tab1 StartNav13 #typed
+0:00:02 Tab1 FinishNav13 ERR_ABORTED
+0:00:02 Tab1 StartNav14 #typed
+0:00:02 Tab1 FinishNav14 ERR_ABORTED
+0:00:02 Tab1 StartNav15 #typed
+0:00:02 Tab1 FinishNav15 ERR_ABORTED
+0:00:02 Tab1 StartNav16 #typed
+0:00:02 Tab1 FinishNav16 ERR_ABORTED
+0:00:02 Tab1 StartNav17 #typed
+0:00:02 Tab1 FinishNav17 ERR_ABORTED
+0:00:02 Tab1 StartNav18 #typed
+0:00:02 Tab1 FinishNav18 ERR_ABORTED
+0:00:02 Tab1 StartNav19 #typed
+0:00:02 Tab1 FinishNav19 ERR_ABORTED
+0:00:02 Tab1 StartNav20 #typed
+0:00:02 Tab1 FinishNav20 ERR_ABORTED
+0:00:02 Tab1 StartNav21 #typed
+0:00:02 Tab1 FinishNav21 ERR_ABORTED
+0:00:02 Tab1 StartNav22 #typed
+0:00:02 Tab1 FinishNav22 ERR_ABORTED
+0:00:02 Tab1 StartNav23 #typed
+0:00:02 Tab1 FinishNav23 ERR_ABORTED
+0:00:02 Tab1 StartNav24 #typed
+0:00:02 Tab1 FinishNav24 ERR_ABORTED
+0:00:02 Tab1 StartNav25 #typed
+0:00:02 Microsoft.Shutdown.TabStripModel.SendDetachWebContentsNotifications
+0:00:02 Browser1 Close Tab1 at 0
+0:00:02 Tab1 FinishNav25 ERR_ABORTED
+0:00:02 Tab1 WebContentsDestroyed
+0:00:02 Microsoft.Shutdown.OnWindowClosing
+0:00:02 Microsoft.UnloadController.IsUnclosableApp_IsNotWebApp
+0:00:02 Microsoft.UnloadController.HasCompletedUnloadProcessing_False
+0:00:02 Microsoft.Shutdown.OnWindowClosing_MaybeClearBrowsingDataOnExit
+0:00:02 Microsoft.Shutdown.OnWindowClosing_ClearBrowsingDataOnExitNotInProgress
+0:00:02 Microsoft.Shutdown.OnWindowClosingPostClearBrowsingData_NoBrowsingDataCleared
+0:00:02 Widget Closed: WebView2MinimalFrame
+0:00:02 Microsoft.UnloadController.TabStripEmpty
+0:00:02 Microsoft.Last_Browser_Removed
+0:00:02 Widget Closed: WebView2MinimalFrame
